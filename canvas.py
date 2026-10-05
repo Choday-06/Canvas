@@ -38,5 +38,52 @@ canvas.create_rectangle(225, 280, 275, 350, fill="brown")
 canvas.create_rectangle(170, 230, 210, 270, fill="blue")
 canvas.create_rectangle(290, 230, 330, 270, fill="blue")
 
+# Sun
+canvas.create_oval(40, 40, 100, 100, fill="yellow", outline="orange")
+
+# Sun rays
+for x1, y1, x2, y2 in [
+    (70, 30, 70, 15),
+    (70, 110, 70, 125),
+    (30, 70, 15, 70),
+    (110, 70, 125, 70)
+]:
+    canvas.create_line(x1, y1, x2, y2, fill="orange", width=2)
+
+# Dog House
+canvas.create_rectangle(40, 300, 120, 360, fill="brown")
+
+# Dog house roof
+canvas.create_polygon(30, 300, 80, 260, 130, 300, fill="darkred")
+
+# Dog house door
+canvas.create_oval(60, 320, 100, 360, fill="black")
+
+# Puppy
+
+# Body
+canvas.create_oval(380, 300, 450, 350, fill="brown")
+
+# Head
+canvas.create_oval(400, 260, 460, 320, fill="brown")
+
+# Ears
+canvas.create_oval(395, 265, 415, 300, fill="darkred")
+canvas.create_oval(445, 265, 465, 300, fill="darkred")
+
+# Eyes
+canvas.create_oval(415, 280, 422, 287, fill="black")
+canvas.create_oval(440, 280, 447, 287, fill="black")
+
+# Nose
+canvas.create_oval(428, 292, 438, 300, fill="black")
+
+# Legs
+canvas.create_rectangle(390, 335, 405, 360, fill="brown")
+canvas.create_rectangle(425, 335, 440, 360, fill="brown")
+
+# Tail
+canvas.create_line(450, 315, 470, 300, fill="brown", width=6)
+
 root.mainloop()
 
